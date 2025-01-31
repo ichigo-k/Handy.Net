@@ -9,12 +9,12 @@ function Footer() {
         <div className="flex flex-col items-center md:items-start mb-6 md:mb-0">
           
           <div className='flex flex-col items-center mb-3'>
-            <h1 className='text-3xl font-bold '>Handy.Net</h1>
-            <h3 className='text-2xl font-bold text-yellow-400'>IT Solutions</h3>
+            <h1 className='text-3xl font-bold '>Handy Hands</h1>
+            <h3 className='text-2xl font-bold text-yellow-400'>Company Limited</h3>
 
           </div>
           <p className="text-gray-400 text-sm md:text-base text-center md:text-left">
-            Handy.Net IT Solutions - Your trusted IT partner.
+            Handy Hands Company Limited - Your trusted partner.
           </p>
         </div>
         
@@ -37,7 +37,7 @@ function Footer() {
       {/* Footer Bottom */}
       <div className="container mx-auto px-4 md:px-8 mt-6 border-t border-gray-700 pt-4 text-center">
         <p className="text-gray-500 text-sm">
-          &copy; 2024 Hany.Net IT Solutions. All Rights Reserved.
+          &copy; 2024 Handy Hands Company Limited. All Rights Reserved.
         </p>
       </div>
     </footer>

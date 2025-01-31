@@ -32,8 +32,8 @@ function Navbar() {
                 <div className='w-full contain flex h-full justify-between items-center p-2 mx-auto'>
 
                 <div className='flex flex-col items-center  '>
-                  <h1 className='text-xl font-bold '>Handy.Net</h1>
-                  <h3 className='text-lg font-bold text-yellow-400 mt-[-10px]'>IT Solutions</h3>
+                  <h1 className='text-xl font-bold '>Handy Hands</h1>
+                  <h3 className='text-lg font-bold text-yellow-400 mt-[-10px]'>Company Limited</h3>
 
                 </div>
 

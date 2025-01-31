@@ -36,7 +36,7 @@ function Testimonials() {
               <p className="text-slate-500 text-sm">School Administrator</p>
             </div>
             <p className="text-slate-700 text-base mb-4">
-              We needed a reliable IT consultant for our school, and Hany.Net IT Solutions delivered beyond our expectations. They are thorough and detail-oriented and offer great advice on maintaining our IT equipment.
+              We needed a reliable IT consultant for our school, and Handy.Net IT Solutions delivered beyond our expectations. They are thorough and detail-oriented and offer great advice on maintaining our IT equipment.
             </p>
             <div className="flex space-x-1 text-green-600">
               <Star className="w-5 h-5 fill-green-600" />
@@ -54,7 +54,7 @@ function Testimonials() {
               <p className="text-slate-500 text-sm">Student</p>
             </div>
             <p className="text-slate-700 text-base mb-4">
-              I needed a new laptop for my studies, and Hany.Net IT Solutions helped me find the perfect one within my budget. Their staff was very knowledgeable and friendly. I will definitely return for any future tech needs.
+              I needed a new laptop for my studies, and Handy.Net IT Solutions helped me find the perfect one within my budget. Their staff was very knowledgeable and friendly. I will definitely return for any future tech needs.
             </p>
             <div className="flex space-x-1 text-green-600">
               <Star className="w-5 h-5 fill-green-600" />

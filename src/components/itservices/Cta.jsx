@@ -1,5 +1,5 @@
 import React from 'react';
-import ctaImg from "../assets/cta.jpg";
+import ctaImg from "../../assets/cta.jpg";
 
 function Cta() {
   return (

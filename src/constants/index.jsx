@@ -3,20 +3,16 @@ import { Instagram, X,Facebook } from "lucide-react"
 export const navLinks =[
 
     {
-        name: "About Us",
-        link:"#about"
+        name: "Logistics Services",
+        link:"/"
     },
     {
-        name: "Services",
-        link:"#services"
-    },
-    {
-        name: "Faq",
-        link:"#faq"
+        name: "IT Services",
+        link:"/itServices"
     },
     {
         name: "Contact Us",
-        link:"#contact"
+        link:"/contact "
     },
 
 ]
@@ -62,11 +58,11 @@ export const services = [
 
 export const questions = [
     {
-      "question": "What services does Hany.Net IT Solutions offer?",
-      "answer": "Hany.Net IT Solutions provides a range of services including IT consulting, device repair, the sale of IT devices, and the installation of IT equipment like cameras, printers, and more."
+      "question": "What services does Handy.Net IT Solutions offer?",
+      "answer": "Handy.Net IT Solutions provides a range of services including IT consulting, device repair, the sale of IT devices, and the installation of IT equipment like cameras, printers, and more."
     },
     {
-      "question": "Where is Hany.Net IT Solutions located?",
+      "question": "Where is Handy.Net IT Solutions located?",
       "answer": "Our office is located in Tesano, Accra. Feel free to visit us for any inquiries or services you may need."
     },
     {
@@ -78,7 +74,7 @@ export const questions = [
       "answer": "Yes, we offer on-site installation services for IT equipment such as cameras, printers, and other devices. Our technicians are trained to ensure a smooth and efficient installation process."
     },
     {
-      "question": "Can I purchase IT devices directly from Hany.Net IT Solutions?",
+      "question": "Can I purchase IT devices directly from Handy.Net IT Solutions?",
       "answer": "Absolutely! We sell a variety of IT devices, including computers, printers, cameras, and accessories. Our team can help you choose the right products to meet your needs."
     },
     {

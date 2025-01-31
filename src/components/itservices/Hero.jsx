@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRightCircle } from 'lucide-react';
-import heroImg from "../assets/hero1.png"
+import heroImg from "../../assets/hero1.png"
 
 function Hero() {
   return (
@@ -24,7 +24,7 @@ function Hero() {
 
           {/* Description */}
           <p className="max-w-lg mt-6 text-lg text-gray-700">
-            At Hany.Net IT Solutions, we specialize in optimizing your IT infrastructure, from consultation to installation and ongoing support. Discover how our tailored services can elevate your business.
+            At Handy.Net IT Solutions, we specialize in optimizing your IT infrastructure, from consultation to installation and ongoing support. Discover how our tailored services can elevate your business.
           </p>
 
           {/* Call to Action Button */}

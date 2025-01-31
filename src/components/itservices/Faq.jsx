@@ -1,6 +1,6 @@
 import React from 'react';
 import { PlusCircle } from 'lucide-react';
-import { questions } from '../constants';
+import { questions } from '../../constants';
 
 function Accordion({ question, answer }) {
   const [accordionOpen, setAccordionOpen] = React.useState(false);

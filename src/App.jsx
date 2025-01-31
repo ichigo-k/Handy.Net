@@ -1,27 +1,16 @@
 import React from 'react'
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import AboutUs from './components/AboutUs'
-import OurServices from './components/OurServices'
-import Testimonials from './components/Testimonials'
-import Faq from './components/Faq'
-import Contact from './components/Contact'
-import Cta from './components/Cta'
-import Footer from './components/Footer'
+import { Routes, Route } from 'react-router'
+import ItSolutions from './pages/itSolutions'
+import Logistics from './pages/Logistics'
+import Contact from './pages/ContactUs'
 
 function App() {
   return (
-    <>
-      <Navbar/>
-      <Hero/>
-      <AboutUs/>
-      <OurServices/>
-      <Testimonials/>
-      <Faq/>
-      <Contact/>
-      <Cta/>
-      <Footer/>
-    </>
+  <Routes>
+      <Route index element={<Logistics/>} />
+      <Route path="/itServices" element={<ItSolutions/>} />
+      <Route path="/contact" element={<Contact/>} />
+  </Routes>
    
   )
 }

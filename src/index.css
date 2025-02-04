@@ -14,3 +14,11 @@ html{
 .contain{
   @apply max-w-[1260px]
 }
+
+.hollow{
+  @apply bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent
+}
+
+.gradient-bg{
+  @apply bg-gradient-to-r from-yellow-400 to-orange-500
+}

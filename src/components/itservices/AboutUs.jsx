@@ -18,7 +18,7 @@ function AboutUs() {
           <div className="w-24 h-1 bg-yellow-400 mx-auto mt-4"></div>
         </header>
           <p className="text-gray-600 text-lg leading-relaxed">
-            Hany.Net IT Solutions is a Ghana-based company dedicated to resolving IT challenges for businesses and individuals. From purchasing and installing IT devices to repair and maintenance, we provide comprehensive services tailored to your needs. Our expertise also extends to web development, where we create engaging, high-performing websites to support your digital goals. At Hany.Net, we are committed to delivering seamless IT solutions that help you thrive in a technology-driven world.
+            Handy.Net IT Solutions is a Ghana-based company dedicated to resolving IT challenges for businesses and individuals. From purchasing and installing IT devices to repair and maintenance, we provide comprehensive services tailored to your needs. Our expertise also extends to web development, where we create engaging, high-performing websites to support your digital goals. At Hany.Net, we are committed to delivering seamless IT solutions that help you thrive in a technology-driven world.
           </p>
         </div>
       </div>

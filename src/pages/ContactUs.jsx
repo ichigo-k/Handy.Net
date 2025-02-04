@@ -56,7 +56,7 @@ function ContactUs() {
 
         {/* Contact Form Section */}
         <div className="md:w-1/2 max-w-lg w-full bg-white shadow-lg rounded-lg p-6 md:p-8">
-          <h1 className="text-yellow-500 text-2xl font-bold">Get In Touch With Us</h1>
+          <h1 className="hollow text-2xl font-bold">Get In Touch With Us</h1>
           <p className="text-gray-600 text-md mt-2">We are here for you! How can we help?</p>
           <form ref={form} onSubmit={sendEmail} className="flex flex-col space-y-4 mt-6">
             <div className="flex items-center border border-gray-300 rounded-md p-2">
@@ -90,7 +90,7 @@ function ContactUs() {
             </div>
             <button
               type="submit"
-              className="p-3 bg-yellow-500 text-black font-semibold rounded-md shadow-md hover:bg-yellow-600 transition-all"
+              className="p-3 gradient-bg text-black font-semibold rounded-md shadow-md hover:bg-yellow-600 transition-all"
             >
               Send Message
             </button>

@@ -20,7 +20,7 @@ function Cta() {
         </p>
         <a 
           href=""
-          className="inline-block px-6 py-3 text-sm md:text-base lg:text-lg font-semibold bg-yellow-500 hover:bg-yellow-600 text-black rounded-md shadow-md transition duration-300 "
+          className="inline-block px-6 py-3 text-sm md:text-base lg:text-lg font-semibold gradient-bg text-white rounded-md shadow-md transition duration-300 "
         >
           Get Started Now
         </a>

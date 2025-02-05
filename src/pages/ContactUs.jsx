@@ -41,15 +41,15 @@ function ContactUs() {
           <div className="mt-6 space-y-5 w-full max-w-md">
             <div className="flex items-center gap-4">
               <MapPin className="w-10 h-10 text-yellow-500 p-2 rounded-full border-2 border-yellow-500" />
-              <h2 className="text-gray-800 text-lg font-medium">Abeka, near Ghana Telecom</h2>
+              <h2 className="text-gray-800 text-lg font-medium">Aviance Ghana, Airport Bypass Rd, Accra</h2>
             </div>
             <div className="flex items-center gap-4">
               <PhoneCall className="w-10 h-10 text-yellow-500 p-2 rounded-full border-2 border-yellow-500" />
-              <h2 className="text-gray-800 text-lg font-medium">+233 553010003</h2>
+              <h2 className="text-gray-800 text-lg font-medium">+233 50 333 4857</h2>
             </div>
             <div className="flex items-center gap-4">
               <Mail className="w-10 h-10 text-yellow-500 p-2 rounded-full border-2 border-yellow-500" />
-              <h2 className="text-gray-800 text-lg font-medium">tettehkephas@mail.com</h2>
+              <h2 className="text-gray-800 text-lg font-medium">handyhandscompanylimited@gmail.com</h2>
             </div>
           </div>
         </div>

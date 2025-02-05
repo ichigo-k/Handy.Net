@@ -29,15 +29,15 @@ function Footer() {
           <h4 className="text-2xl font-bold hollow">Contact Us</h4>
           <p className="flex items-center text-gray-100">
             <MapPin size={18} className="mr-2 text-yellow-400" />
-            Tesano, Accra, Ghana
+            Aviance Ghana, Airport Bypass Rd, Accra
           </p>
           <p className="flex items-center text-gray-100">
             <Phone size={18} className="mr-2 text-yellow-400" />
-            +233 123 456 789
+            +233 50 333 4857
           </p>
           <p className="flex items-center text-gray-100">
             <Mail size={18} className="mr-2 text-yellow-400" />
-            support@handyhands.com
+            handyhandscompanylimited@gmail.com
           </p>
         </div>
 

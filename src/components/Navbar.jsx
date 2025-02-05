@@ -81,13 +81,13 @@ function Navbar({ log = false }) {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-0 left-0 w-full h-[22rem] bg-black text-white rounded-b-xl shadow-xl transition-all duration-300 z-[10000] flex flex-col items-center md:hidden ${
+        className={`fixed top-0 left-0 w-full h-[22rem] bg-white text-black rounded-b-xl shadow-xl transition-all duration-300 z-[10000] flex flex-col items-center md:hidden ${
           nav ? 'translate-y-0' : 'translate-y-[-100%]'
         }`}
       >
         <div className="w-full p-3 flex items-center justify-between">
           <h2 className="font-bold text-2xl">
-            Handy<span className="text-yellow-400">.Net</span>
+            Handy<span className="hollow">Hands</span>
           </h2>
           <button onClick={() => setNav(false)} aria-label="Close Menu">
             <SidebarClose size={30} />

@@ -21,15 +21,15 @@ export const navLinks =[
 export const socialMedia =[
     {
         icon:<Instagram/>,
-        link:"/"
+        link:"#"
     }, 
     {
         icon:<Facebook/>,
-        link:"/"
+        link:"#"
     },
     {
         icon:<X/>, 
-        link:"/"
+        link:"#"
     }
 
 ]

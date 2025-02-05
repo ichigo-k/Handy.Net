@@ -29,7 +29,7 @@ const testimonials = [
 function Testimonials() {
   return (
     <section className="w-full bg-gradient-to-b from-yellow-100 to-yellow-200 py-12" id="testimonials">
-      <div className="container mx-auto px-6">
+      <div className="contain mx-auto px-6">
         {/* Section Header */}
         <header className="text-center mb-12">
           <h2 className="text-4xl font-extrabold text-slate-800">What Our Clients Say</h2>

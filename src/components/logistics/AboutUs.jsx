@@ -2,7 +2,7 @@ import React from "react";
 
 function AboutUs() {
   return (
-    <section id="about" className="w-full pb-16 ">
+    <section id="about" className="w-full py-16 ">
       <div className="contain  mx-auto flex flex-col lg:flex-row items-center justify-between px-6">
         {/* Left Side - Image Section */}
         <div className="w-full lg:w-1/2 lg:pr-12 mb-10 lg:mb-0 relative">

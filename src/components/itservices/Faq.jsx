@@ -9,7 +9,7 @@ function Accordion({ question, answer }) {
   return (
     <div className="bg-white shadow-md rounded-lg p-4 border border-gray-200">
       <button
-        className="flex justify-between w-full items-center gap-x-3 py-2"
+        className="flex justify-between w-full items-left gap-x-3 py-2"
         onClick={() => setAccordionOpen(!accordionOpen)}
       >
         <span className="font-semibold text-lg text-slate-800">{question}</span>
@@ -37,7 +37,7 @@ function Faq() {
   return (
     <section id="faq" className="w-full py-12 bg-gray-50">
       <div className="container mx-auto flex flex-col items-center">
-        <div className="text-center mb-8">
+        <div className="text-left mb-8">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-800">Frequently Asked Questions</h2>
           <div className="w-24 h-1 bg-yellow-500 mx-auto mt-3"></div>
         </div>

@@ -11,7 +11,7 @@ import SubCta from '../components/logistics/SubCta'
 function Logistics() {
   return (
     <div>
-        <Navbar log="true" />
+        <Navbar log="true" title="true" />
         <Hero/>
         <SubHero/>
         <AboutUs/>

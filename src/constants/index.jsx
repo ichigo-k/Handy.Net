@@ -12,7 +12,7 @@ export const navLinks =[
     },
     {
         name: "Contact Us",
-        link:"/contact "
+        link:"/contact"
     },
 
 ]

@@ -33,7 +33,7 @@ function ContactUs() {
 
   return (
     <div className="mt-10 min-h-screen flex flex-col">
-      <Navbar />
+      <Navbar title="false" />
       <div className="flex flex-col md:flex-row items-center justify-center gap-12 px-6 md:px-20 py-12">
         {/* Contact Info Section */}
         <div className="md:w-1/2 flex flex-col items-center text-center md:text-left">

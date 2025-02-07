@@ -8,7 +8,7 @@ function AboutUs() {
         <div className="w-full lg:w-1/2 lg:pr-12 mb-10 lg:mb-0 relative">
           {/* Experience Badge */}
           <div className="p-3 absolute top-5 left-5 bg-white shadow-lg flex items-center space-x-4 rounded-lg px-4 py-2">
-            <span className="font-bold hollow text-4xl">3+</span>
+            <span className="font-bold hollow text-4xl">10+</span>
             <span className="text-gray-700 font-semibold text-lg">Years of Experience</span>
           </div>
 
@@ -37,8 +37,8 @@ function AboutUs() {
 
           {/* Description */}
           <p className="text-gray-600 text-lg leading-relaxed max-w-lg mx-auto lg:mx-0">
-            Handy Hands Company Limited was founded to provide an easy, fast, and convenient** way for businesses and individuals to simplify their logistics.  
-            From seamless deliveries to secure warehousing, we ensure your goods reach their destination on time, every time.
+            We are a top Freight Forwarding Company that is specialised in managing the movement of goods through warehousing and transportation from the point of origin to the point of consumption in accordance with particular client needs. 
+            Export and Import of courier materials
           </p>
 
           {/* Call to Action Button */}

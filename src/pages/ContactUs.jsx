@@ -36,7 +36,7 @@ function ContactUs() {
       <Navbar title="false" />
       <div className="flex flex-col md:flex-row items-center justify-center gap-12 px-6 md:px-20 py-12">
         {/* Contact Info Section */}
-        <div className="md:w-1/2 flex flex-col items-center text-center md:text-left">
+        {/* <div className="md:w-1/2 flex flex-col items-center text-center md:text-left">
           <img src={contSvg} alt="Contact" className="w-3/4 max-w-xs" />
           <div className="mt-6 space-y-5 w-full max-w-md">
             <div className="flex items-center gap-4">
@@ -52,7 +52,7 @@ function ContactUs() {
               <h2 className="text-gray-800 text-lg font-medium">handyhandscompanylimited@gmail.com</h2>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Contact Form Section */}
         <div className="md:w-1/2 max-w-lg w-full bg-white shadow-lg rounded-lg p-6 md:p-8">
@@ -90,7 +90,7 @@ function ContactUs() {
             </div>
             <button
               type="submit"
-              className="p-3 gradient-bg text-black font-semibold rounded-md shadow-md hover:bg-yellow-600 transition-all"
+              className="p-3 gradient-bg text-white font-semibold rounded-md shadow-md hover:bg-yellow-600 transition-all"
             >
               Send Message
             </button>

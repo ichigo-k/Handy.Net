@@ -21,7 +21,7 @@ function AboutUs() {
 
           {/* Overlay Image */}
           <img
-            src="https://cdn.pixabay.com/photo/2020/06/20/13/56/hamburg-5321111_960_720.jpg"
+            src="https://i.pinimg.com/736x/20/2a/ed/202aed896926b93bdf41421df2d4aa77.jpg"
             alt="Logistics Operations"
             className="md:w-[15rem] md:h-[20rem] w-[10rem] h-[15rem] object-cover rounded-xl shadow-xl absolute md:-bottom-10 -bottom-4 border-4 border-white xl:-right-16 -right-2"
           />

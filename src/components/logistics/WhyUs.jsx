@@ -3,60 +3,63 @@ import { Truck, Package, BadgeDollarSign } from "lucide-react";
 
 const features = [
   {
-    icon: <Truck size={40} className="text-yellow-400 max-md:hidden" />, 
+    icon: <Truck size={50} className="text-orange-500" />,
     title: "Fast & Reliable Delivery",
     description:
-      "We ensure your packages arrive on time, every time, with our trusted delivery network.",
+      "On-time delivery with a trusted logistics network ensuring seamless transportation.",
     image:
       "https://i.pinimg.com/736x/dd/1f/de/dd1fde910b283474d573d7fea0d109a6.jpg",
   },
   {
-    icon: <BadgeDollarSign size={40} className="text-yellow-400 max-md:hidden" />, 
+    icon: <BadgeDollarSign size={50} className="text-orange-500" />,
     title: "Affordable Pricing",
     description:
-      "Get the best rates for all your logistics needs without compromising on quality service.",
+      "Cost-effective solutions tailored to your logistics and IT service needs.",
     image:
       "https://i.pinimg.com/736x/28/ff/91/28ff91a239785459a346d12608cc8251.jpg",
   },
   {
-    icon: <Package size={40} className="text-yellow-400 max-md:hidden" />, 
+    icon: <Package size={50} className="text-orange-500" />,
     title: "Efficient Supply Chain",
     description:
-      "From warehousing to last-mile delivery, we optimize logistics for seamless operations.",
+      "Streamlined logistics from warehousing to final-mile delivery for smooth operations.",
     image:
-      "https://i.pinimg.com/736x/e2/e8/7c/e2e87cb489b758fe1425901cdfeef87f.jpg",
+      "https://i.pinimg.com/736x/af/9d/fe/af9dfed09b20e466e4177f62dc3e8444.jpg",
   },
 ];
 
 function WhyUs() {
   return (
-    <section className="w-full py-10 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-6 grid gap-10 md:gap-15">
-        {features.map((feature, index) => (
-          <div
-            key={index}
-            className={`flex flex-col md:flex-row items-center gap-10 ${
-              index % 2 === 1 ? "md:flex-row-reverse" : ""
-            }`}
-          >
-            <img
-              src={feature.image}
-              alt={feature.title}
-              className="w-full md:w-1/2 h-64 object-cover rounded-2xl shadow-md"
-            />
-            <div className="md:w-1/2 text-center md:text-left space-y-4">
-              <div className="flex items-center justify-center md:justify-start gap-3">
-                {feature.icon}
-                <h3 className="text-3xl font-semibold text-gray-900 hollow">
+    <section className="w-full py-16 bg-gradient-to-b from-gray-50 to-gray-100">
+      <div className="max-w-7xl mx-auto px-6 text-center">
+        <h2 className="text-4xl font-bold text-gray-900 mb-8">Why <span className="hollow">Choose</span> Us?</h2>
+        <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-12">
+          We provide top-notch logistics and IT solutions, ensuring efficiency, affordability, and reliability.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {features.map((feature, index) => (
+            <div
+              key={index}
+              className="bg-white shadow-lg rounded-2xl overflow-hidden hover:shadow-2xl transition duration-300"
+            >
+              <img
+                src={feature.image}
+                alt={feature.title}
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <div className="flex items-center justify-center mb-4">
+                  {feature.icon}
+                </div>
+                <h3 className="text-2xl font-semibold text-gray-900 mb-3">
                   {feature.title}
                 </h3>
+                <p className="text-gray-600">{feature.description}</p>
               </div>
-              <p className="text-gray-600 text-lg leading-relaxed">
-                {feature.description}
-              </p>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

@@ -48,8 +48,8 @@ function Hero() {
           Streamlining logistics with efficiency and precision. We ensure your
           goods arrive on time, every time.
         </p>
-        <a href="#about" className="mt-8 px-8 py-3 bg-gradient-to-r from-yellow-400 to-orange-500 text-white font-semibold text-lg rounded-full shadow-lg hover:from-yellow-500 hover:to-orange-600 transition-all duration-300 transform hover:scale-105">
-          Explore More
+        <a href="#services" className="mt-8 px-8 py-3 bg-gradient-to-r from-yellow-400 to-orange-500 text-white font-semibold text-lg rounded-full shadow-lg hover:from-yellow-500 hover:to-orange-600 transition-all duration-300 transform hover:scale-105">
+          Explore Services
         </a>
       </div>
     </section>

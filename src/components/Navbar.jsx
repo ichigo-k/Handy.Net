@@ -19,7 +19,7 @@ function Navbar({ log = false, title }) {
 
   return (
     <nav
-      className={`w-full fixed top-0 z-[1000] transition-all duration-300 ${
+      className={`w-full fixed top-0 z-[1000] transition-all duration-300 py-2 ${
         !log || (log && isScrolled) ? "bg-white shadow-lg" : "bg-transparent shadow-none"
       }`}
     >

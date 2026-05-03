@@ -5,23 +5,21 @@ import AboutUs from '../components/itservices/AboutUs'
 import OurServices from '../components/itservices/OurServices'
 import Testimonials from '../components/itservices/Testimonials'
 import Faq from '../components/itservices/Faq'
-import Contact from '../components/Contact'
-import Cta from '../components/itservices/Cta'
+import Contact from '../components/itservices/Contact'
 import Footer from '../components/Footer'
 
 function itSolutions() {
   return (
     <>
-      <Navbar/>
-      <Hero/>
-      <AboutUs/>
-      <OurServices/>
-      <Testimonials/>
-      <Faq/>
-      <Cta/>
-      <Footer/>
+      <Navbar />
+      <Hero />
+      <AboutUs />
+      <OurServices />
+      <Testimonials />
+      <Faq />
+      <Contact />
+      <Footer />
     </>
-   
   )
 }
 

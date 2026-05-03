@@ -3,12 +3,14 @@
 @tailwind utilities;
 
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-:root{
-  @apply font-popins  
+@layer base {
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
 }
 
 .contain{

@@ -1,84 +1,116 @@
-import { Star } from 'lucide-react';
-import { motion } from 'framer-motion';
-import React from 'react';
+import { Star, Quote } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import React, { useState, useEffect } from 'react';
 
 const testimonials = [
-  {
-    title: 'Exceptional Service',
-    name: 'Emily Esi Boyevi',
-    role: 'IT Manager',
-    feedback:
-      'I’ve worked with several IT service providers, but Handy.Net IT Solutions stands out for their professionalism and expertise.',
-    rating: 5,
-  },
-  {
-    title: 'Reliable IT Consulting',
-    name: 'Samuel Adu-Mensah',
-    role: 'School Administrator',
-    feedback:
-      'We needed a reliable IT consultant for our school, and Handy.Net IT Solutions delivered beyond our expectations.',
-    rating: 5,
-  },
-  {
-    title: 'Great Customer Support',
-    name: 'Evelyn Mensah-Addo',
-    role: 'Student',
-    feedback:
-      'I needed a new laptop for my studies, and Handy.Net IT Solutions helped me find the perfect one within my budget.',
-    rating: 4,
-  },
+ {
+ title: 'Exceptional IT Service',
+ name: 'Emily Esi Boyevi',
+ role: 'IT Manager',
+ feedback:
+"I've worked with several IT service providers, but Handy.Net stands out for their professionalism and expertise. Our office setup was handled flawlessly.",
+ rating: 5,
+ },
+ {
+ title: 'Brilliant Smart Home Setup',
+ name: 'Kwame Asante',
+ role: 'Homeowner, East Legon',
+ feedback:
+ 'The team automated my entire home — lighting, security cameras, and climate control. Everything works perfectly from my phone. Absolutely worth it.',
+ rating: 5,
+ },
+ {
+ title: 'Reliable Electrical Installation',
+ name: 'Evelyn Mensah-Addo',
+ role: 'Business Owner',
+ feedback:
+ 'Handy.Net handled our full office electrical rewiring and solar backup installation. Professional, on time, and the quality of work is outstanding.',
+ rating: 5,
+ },
+ {
+ title: 'Great Customer Support',
+ name: 'Samuel Adu-Mensah',
+ role: 'School Administrator',
+ feedback:
+ 'We needed a reliable IT consultant for our school and Handy.Net delivered beyond our expectations. Their after-service support is second to none.',
+ rating: 4,
+ },
 ];
 
 function Testimonials() {
-  return (
-    <section
-     className="w-full bg-yellow-400 py-12 text-white" id="testimonials"
+ const [index, setIndex] = useState(0);
 
-     style={{
-  backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23ffffff30' stroke-width='2'%3E%3Ccircle cx='15' cy='15' r='6'/%3E%3Ccircle cx='45' cy='45' r='6'/%3E%3Cpath d='M8 45l5 5m0 -5l-5 5'/%3E%3Cpath d='M30 8l4 8h-8z'/%3E%3Cpath d='M38 22l4 4m0 -4l-4 4'/%3E%3C/g%3E%3C/svg%3E")`,
-  backgroundSize: "60px 60px",
-}}
+ useEffect(() => {
+ const timer = setInterval(() => {
+ setIndex((prev) => (prev + 1) % testimonials.length);
+ }, 5000);
+ return () => clearInterval(timer);
+ }, []);
 
-  
+ return (
+ <section className="w-full bg-white py-24 overflow-hidden border-t border-slate-100"id="testimonials">
+ <div className="max-w-4xl mx-auto px-6">
+ <header className="mb-12 flex flex-col items-start">
+ <h2 className="text-xs font-bold tracking-[0.2em] hollow uppercase mb-3">Testimonials</h2>
+ <h3 className="text-3xl md:text-4xl font-semibold text-slate-900">
+ What Our Clients Say
+ </h3>
+ </header>
 
-     >
-      <div className="max-w-6xl mx-auto px-6">
-        <header className="text-center mb-12">
-          <h2 className="text-4xl font-extrabold">What Our Clients Say</h2>
-          <div className="w-16 h-1 bg-white mx-auto mt-3 rounded-full"></div>
-        </header>
+ <div className="relative">
+ <AnimatePresence mode="wait">
+ <motion.div
+ key={index}
+ initial={{ opacity: 0 }}
+ animate={{ opacity: 1 }}
+ exit={{ opacity: 0 }}
+ transition={{ duration: 0.4 }}
+ className="bg-slate-50 p-8 md:p-12 border border-slate-200 relative"
+ >
+ <Quote className="text-orange-400/30 w-8 h-8 mb-6"/>
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {testimonials.map((testimonial, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="bg-white text-black shadow-lg rounded-2xl p-6 "
-            >
-              <div className="mb-4">
-                <h3 className="text-xl font-bold text-yellow-400">{testimonial.title}</h3>
-              </div>
-              <p className="text-gray-700 italic">"{testimonial.feedback}"</p>
-              <div className="mt-4">
-                <p className="font-semibold text-lg">{testimonial.name}</p>
-                <p className="text-sm text-gray-500">{testimonial.role}</p>
-              </div>
-              <div className="flex space-x-1 text-yellow-500 mt-3">
-                {[...Array(5)].map((_, starIndex) => (
-                  <Star
-                    key={starIndex}
-                    className={`w-5 h-5 ${starIndex < testimonial.rating ? 'fill-yellow-500' : 'fill-gray-300'}`}
-                  />
-                ))}
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
+ <blockquote className="text-xl md:text-2xl font-medium text-slate-800 leading-relaxed mb-8">
+ {testimonials[index].feedback}
+ </blockquote>
+
+ <div className="flex flex-col sm:flex-row sm:items-center justify-between border-t border-slate-200 pt-6">
+ <div>
+ <cite className="not-italic block text-lg font-semibold text-slate-900">
+ {testimonials[index].name}
+ </cite>
+ <span className="text-sm text-slate-500 mt-1 block">
+ {testimonials[index].role}
+ </span>
+ </div>
+ <div className="flex space-x-1 mt-4 sm:mt-0">
+ {[...Array(5)].map((_, i) => (
+ <Star
+ key={i}
+ className={`w-4 h-4 ${i < testimonials[index].rating ? 'fill-yellow-500 text-yellow-500' : 'fill-slate-200 text-slate-200'}`}
+ />
+ ))}
+ </div>
+ </div>
+ </motion.div>
+ </AnimatePresence>
+
+ {/* Navigation Lines */}
+ <div className="flex space-x-2 mt-8">
+ {testimonials.map((_, i) => (
+ <button
+ key={i}
+ onClick={() => setIndex(i)}
+ className={`h-1 transition-all duration-300 ${
+ i === index ? 'w-10 gradient-bg' : 'w-6 bg-slate-200 hover:bg-slate-300'
+ }`}
+ aria-label={`Go to slide ${i + 1}`}
+ />
+ ))}
+ </div>
+ </div>
+ </div>
+ </section>
+ );
 }
 
 export default Testimonials;

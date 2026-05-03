@@ -1,73 +1,104 @@
 import React from 'react';
 import { socialMedia } from '../constants';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
 
 function Footer() {
-  return (
-    <footer className="w-full bg-black text-white py-12">
-      <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-        
-        {/* Logo & About */}
-        <div>
-          <h1 className="text-3xl font-bold">Handy Hands</h1>
-          <h3 className="text-2xl font-bold hollow">Company Limited</h3>
-          <p className="text-gray-100 text-sm mt-3">
-            Your trusted partner in efficient logistics and supply chain solutions.
-          </p>
-        </div>
+ return (
+ <footer className="w-full bg-slate-950 pt-24 pb-8 relative mt-32">
 
-        {/* Quick Links */}
-        <div className="flex flex-col space-y-3">
-          <h4 className="text-2xl font-bold hollow">Quick Links</h4>
-          <a href="/" className="text-gray-100 hover:text-yellow-400 transition">Logistics Services</a>
-          <a href="/itServices" className="text-gray-100 hover:text-yellow-400 transition">IT Services</a>
-          <a href="/contact" className="text-gray-100 hover:text-yellow-400 transition">Contact Us</a>
-        </div>
+ {/* Overlapping CTA Card */}
+ <div className="absolute left-0 right-0 top-0 -translate-y-1/2 px-6">
+ <div className="max-w-5xl mx-auto bg-orange-500 shadow-2xl p-10 md:p-16 flex flex-col md:flex-row items-center justify-between gap-8">
+ <div className="text-center md:text-left md:w-2/3">
+ <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+ Ready to Upgrade Your Infrastructure?
+ </h2>
+ <p className="text-slate-900/80 text-lg font-medium">
+ From robust IT networks to smart home automation. Let Handy.Net build the technology foundation you need to succeed.
+ </p>
+ </div>
+ <div className="md:w-1/3 flex justify-center md:justify-end">
+ <a
+ href="/#contact"
+ className="group flex items-center justify-center gap-2 bg-slate-900 text-white font-bold tracking-widest uppercase px-8 py-4 shadow-lg hover:bg-slate-800 transition-colors duration-300 w-full sm:w-auto"
+ >
+ Get Started <ArrowRight size={20} className="transition-transform group-hover:translate-x-1"/>
+ </a>
+ </div>
+ </div>
+ </div>
 
-        {/* Contact Information */}
-        <div className="flex flex-col space-y-3">
-          <h4 className="text-2xl font-bold hollow">Contact Us</h4>
-          <p className="flex items-center text-gray-100">
-            <MapPin size={18} className="mr-2 text-yellow-400" />
-            Aviance Ghana, Airport Bypass Rd, Accra
-          </p>
-          <p className="flex items-center text-gray-100">
-            <Phone size={18} className="mr-2 text-yellow-400" />
-            +233 50 333 4857
-          </p>
-          <p className="flex items-center text-gray-100">
-            <Mail size={18} className="mr-2 text-yellow-400" />
-            handyhandscompanylimited@gmail.com
-          </p>
-        </div>
+ <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16 pt-32 lg:pt-24">
 
-      </div>
+ {/* Logo & About */}
+ <div className="flex flex-col items-start">
+ <a href="/"className="flex flex-col leading-none group mb-6">
+ <span className="text-3xl font-extrabold text-white tracking-tight group-hover:text-orange-500 transition-colors duration-200">
+ Handy.Net
+ </span>
+ <span className="text-xs font-bold hollow tracking-[0.2em] uppercase mt-1">
+ IT Solutions
+ </span>
+ </a>
+ <p className="text-slate-400 text-sm leading-relaxed">
+ Your trusted partner for robust IT networks, certified electrical installations, and advanced smart home infrastructure.
+ </p>
+ </div>
 
-      {/* Social Media & Copyright */}
-      <div className="container mx-auto px-6 md:px-12 mt-8 flex flex-col md:flex-row justify-between items-center border-t border-gray-700 pt-6">
-        
-        {/* Social Media Links */}
-        <div className="flex space-x-4">
-          {socialMedia.map((item, index) => (
-            <a 
-              key={index} 
-              href={item.link} 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="w-10 h-10 flex items-center justify-center gradient-bg rounded-full transition duration-300"
-            >
-              {item.icon}
-            </a>
-          ))}
-        </div>
+ {/* Quick Links */}
+ <div className="flex flex-col space-y-4">
+ <h4 className="text-sm font-bold text-white tracking-[0.1em] uppercase mb-2">Quick Links</h4>
+ <a href="/"className="text-slate-400 hover:text-orange-500 transition-colors duration-200 text-sm w-fit font-medium">Home</a>
+ <a href="/#services"className="text-slate-400 hover:text-orange-500 transition-colors duration-200 text-sm w-fit font-medium">Our Services</a>
+ <a href="/#about"className="text-slate-400 hover:text-orange-500 transition-colors duration-200 text-sm w-fit font-medium">About Us</a>
+ <a href="/#contact"className="text-slate-400 hover:text-orange-500 transition-colors duration-200 text-sm w-fit font-medium">Contact Us</a>
+ </div>
 
-        {/* Copyright */}
-        <p className="text-gray-500 text-sm mt-4 md:mt-0">
-          &copy; 2024 Handy Hands Company Limited. All Rights Reserved.
-        </p>
-      </div>
-    </footer>
-  );
+ {/* Contact Information */}
+ <div className="flex flex-col space-y-4">
+ <h4 className="text-sm font-bold text-white tracking-[0.1em] uppercase mb-2">Contact</h4>
+ <div className="flex items-start text-slate-400 text-sm font-medium">
+ <MapPin size={18} className="mr-3 text-orange-500 flex-shrink-0 mt-0.5"/>
+ <p>Aviance Ghana, Airport Bypass Rd, Accra</p>
+ </div>
+ <div className="flex items-center text-slate-400 text-sm font-medium">
+ <Phone size={18} className="mr-3 text-orange-500 flex-shrink-0"/>
+ <p>+233 50 333 4857</p>
+ </div>
+ <div className="flex items-center text-slate-400 text-sm font-medium">
+ <Mail size={18} className="mr-3 text-orange-500 flex-shrink-0"/>
+ <p>handyhandscompanylimited@gmail.com</p>
+ </div>
+ </div>
+
+ </div>
+
+ {/* Bottom Bar */}
+ <div className="max-w-6xl mx-auto px-6 mt-16 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6">
+
+ {/* Copyright */}
+ <p className="text-slate-500 text-sm font-medium tracking-wide">
+ &copy; {new Date().getFullYear()} Handy.Net IT Solutions. All Rights Reserved.
+ </p>
+
+ {/* Social Media Links */}
+ <div className="flex space-x-3">
+ {socialMedia.map((item, index) => (
+ <a
+ key={index}
+ href={item.link}
+ target="_blank"
+ rel="noopener noreferrer"
+ className="w-10 h-10 flex items-center justify-center bg-slate-800 text-slate-400 hover:bg-orange-500 hover:text-white transition-all duration-300"
+ >
+ {item.icon}
+ </a>
+ ))}
+ </div>
+
+ </div>
+ </footer>
+ );
 }
 
 export default Footer;

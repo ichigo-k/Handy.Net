@@ -33,7 +33,7 @@ function Contact() {
  <section className="w-full bg-gray-900 p-6"id='contact'>
  <div className="flex flex-col items-center mx-auto mt-4 mb-2">
  <h2 className="text-3xl font-bold text-center text-white">Contact Us</h2>
- <div className="w-[10rem] h-2 bg-yellow-400 my-4"></div>
+ <div className="w-[10rem] h-2 bg-primary-400 my-4"></div>
  </div>
  <div className="mx-auto max-w-lg bg-gray-800 p-6 shadow-lg">
  <form ref={form} onSubmit={sendEmail} className="flex flex-col space-y-4">
@@ -70,7 +70,7 @@ function Contact() {
 
  <button
  type="submit"
- className="p-2 bg-yellow-500 text-black font-semibold shadow-md hover:bg-yellow-600 transition-colors"
+ className="p-2 bg-primary-500 text-black font-semibold shadow-md hover:bg-primary-600 transition-colors"
  >
  Send
  </button>

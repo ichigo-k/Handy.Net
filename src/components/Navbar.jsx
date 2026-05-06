@@ -2,6 +2,8 @@ import { Menu, X } from"lucide-react";
 import React, { useEffect, useState } from"react";
 import { motion, AnimatePresence } from"framer-motion";
 import { navLinks } from"../constants";
+import logo from "../assets/logo.png";
+
 
 function Navbar() {
  const [nav, setNav] = useState(false);
@@ -31,16 +33,11 @@ function Navbar() {
  :"bg-white shadow-sm"
  }`}
  >
- <div className="contain mx-auto flex h-[4.2rem] items-center justify-between px-5">
+ <div className="contain mx-auto flex h-[4.5rem] items-center justify-between px-5">
 
  {/* Logo — left */}
- <a href="/"className="flex flex-col leading-none group">
- <span className="text-[1.15rem] font-extrabold text-slate-800 tracking-tight group-hover:text-yellow-500 transition-colors duration-200">
- Handy.Net
- </span>
- <span className="text-[0.75rem] font-semibold hollow tracking-widest uppercase mt-[-2px]">
- IT Solutions
- </span>
+ <a href="/"className="flex items-center group overflow-hidden h-16 w-56">
+ <img src={logo} alt="Handy.Net Logo" className="h-full w-full object-contain scale-[3.5] translate-y-1" />
  </a>
 
  {/* Desktop Nav Links — right */}
@@ -119,9 +116,8 @@ function Navbar() {
  >
  {/* Header */}
  <div className="flex items-center justify-between px-5 py-4 border-b border-gray-100">
- <a href="/"className="flex flex-col leading-none"onClick={() => setNav(false)}>
- <span className="text-lg font-extrabold text-slate-800">Handy.Net</span>
- <span className="text-xs font-semibold hollow tracking-widest uppercase mt-[-2px]">IT Solutions</span>
+ <a href="/"className="flex items-center overflow-hidden h-12 w-48"onClick={() => setNav(false)}>
+ <img src={logo} alt="Handy.Net Logo" className="h-full w-full object-contain scale-[3.5] translate-y-1" />
  </a>
  <button
  onClick={() => setNav(false)}
@@ -142,7 +138,7 @@ function Navbar() {
  initial={{ opacity: 0, x: -16 }}
  animate={{ opacity: 1, x: 0 }}
  transition={{ delay: index * 0.06, duration: 0.25 }}
- className="flex items-center px-4 py-3 text-base font-medium text-slate-700 hover:bg-gray-50 hover:text-yellow-500 transition-all duration-200"
+ className="flex items-center px-4 py-3 text-base font-medium text-slate-700 hover:bg-gray-50 hover:text-primary-500 transition-all duration-200"
  >
  {item.name}
  </motion.a>

@@ -18,9 +18,9 @@ html {
 }
 
 .hollow{
-  @apply bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent
+  @apply bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent
 }
 
 .gradient-bg{
-  @apply bg-gradient-to-r from-yellow-400 to-orange-500
+  @apply bg-gradient-to-r from-primary-400 to-primary-600
 }

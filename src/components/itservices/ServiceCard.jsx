@@ -43,7 +43,6 @@ function ServiceCard({ item, index }) {
             transition={{ delay: index * 0.03 }}
             className="group relative overflow-hidden border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-slate-300 hover:shadow-md flex flex-col h-full"
         >
-            <div className={`h-[2px] w-full ${accent}`}></div>
             <div className="p-8 flex flex-col flex-grow relative">
                 <div className="flex items-start justify-between gap-4 mb-6 relative z-10">
                     <div>
